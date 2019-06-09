@@ -1,0 +1,27 @@
+CREATE TABLE `emotion`.`user` ( `id` int NOT NULL AUTO_INCREMENT,`name` TEXT NOT NULL , `age` INT NOT NULL , `gender` VARCHAR(1) NOT NULL , `ethnicity` TEXT NOT NULL , `religion` TEXT NOT NULL , `email` TEXT NOT NULL , `music_knowledge` TEXT NOT NULL, PRIMARY KEY (id)) ENGINE = InnoDB;
+
+
+CREATE TABLE `emotion`.`music_files` ( `id` int NOT NULL AUTO_INCREMENT,`filename` TEXT NOT NULL, PRIMARY KEY (id)) ENGINE = InnoDB;
+
+
+INSERT INTO `music_files`(`filename`) VALUES ([value-2]);
+
+SELECT * FROM `music_files` ORDER BY RAND() LIMIT 10;
+
+
+CREATE TABLE `emotion`.`emotion_tracker` ( `id` int NOT NULL AUTO_INCREMENT, `userid` int NOT NULL, `music` TEXT NOT NULL,
+tenderness int NOT NULL, wonder int NOT NULL, nostalgia int NOT NULL, transcendence int NOT NULL, power int NOT NULL, peacefulness int NOT NULL, tension_sadness int NOT NULL, joy int NOT NULL,
+
+PRIMARY KEY (id)) ENGINE = InnoDB;
+
+
+
+INSERT INTO `emotion_tracker`(`userid`, `music`, `tenderness`, `wonder`, `nostalgia`, `transcendence`, `power`, `peacefulness`, `tension_sadness`, `joy`) 
+VALUES ('17', 'SC 11_mixdown.wav', '3', '3', '4', '4', '4', '4', '5', '5', '6')
+
+
+CREATE TABLE `emotion`.`emotion_tracker_coordinates` ( `id` int NOT NULL AUTO_INCREMENT, `userid` int NOT NULL, `music` TEXT NOT NULL,
+xcord decimal NOT NULL, ycord decimal NOT NULL,
+
+PRIMARY KEY (id)) ENGINE = InnoDB;
+

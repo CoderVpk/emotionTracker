@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body bgcolor="#eeee99">
+	<h1 align="center">
+	Platform for Emotion Annotation
+	</h1>
+	
+<!-- Default form register -->
+	<form method="post" action="/add_user" novalidate class="text-center border border-light p-5">
+		<div class="form-field">
+			<input id="name" name="name" placeholder="Name" required style="margin-bottom: 10px;"/>
+		</div>
+		<div class="form-field">
+			<input class="mb4" id="age" name="age" type="number" placeholder="Age" value=""  required style="margin-bottom: 10px;"/>
+		</div>
+		<div class="form-field">
+			<label for="gender">Gender: </label>
+			<input class="input" id="gender" name="gender" type="radio" value="M" /> Male 
+			<input class="input" id="gender" name="gender" type="radio" id="gender"
+				value="F" /> Female </br>
+		</div>
+		<div class="form-field">
+			<input class="input" id="email" name="email" type="email" placeholder="Email" value=""  required style="margin-bottom: 10px;"/>
+		</div>
+		<div class="form-field"  style="margin-bottom: 10px;">
+			<label for="ethinicity">Ethnicity: </label>
+			<select id="ethinicity" name="ethinicity" class="form-control" required>
+				<option selected disabled>Choose Ethnicity:</option>
+				<option>sinhala</option>
+				<option>tamil</option>
+				<option>muslim</option>
+				<option>burger</option>
+			</select>
+		</div>
+		<div class="form-field"  style="margin-bottom: 10px;">
+			<label for="religion">Religion: </label>
+			<select id="religion" name="religion" class="form-control" required>
+				<option selected disabled>Choose Religion:</option>
+				<option>Buddhist</option>
+				<option>hindu</option>
+				<option>islam</option>
+				<option>christian</option>
+			</select>
+		</div>
+		<div class="form-field"  style="margin-bottom: 10px;">
+			<label for="music_knowledge">Knowledge about music: </label>
+			<select id="music_knowledge" name="music_knowledge" class="form-control" required>
+				<option selected disabled>Choose one option</option>
+				<option>Level 1</option>
+				<option>Level 2</option>
+				<option>Level 3</option>
+				<option>Level 4</option>
+			</select>
+		</div>
+		<div class="form-actions">
+			<button class="btn" type="submit">Send</button>
+		</div>
+	</form>
+</body>
+
+</html>
